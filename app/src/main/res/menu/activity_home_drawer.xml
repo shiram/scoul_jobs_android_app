@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="Accounts">
+        <menu>
+            <item
+                android:id="@+id/nav_home"
+                android:title="Home" />
+            <item
+                android:id="@+id/nav_profile"
+                android:title="Profile" />
+            <item
+                android:id="@+id/nav_logout"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+    <item android:title="Jobs">
+        <menu>
+            <item
+                android:id="@+id/nav_add_jobs"
+                android:title="Add Jobs" />
+            <item
+                android:id="@+id/nav_manage_jobs"
+                android:title="Manage Jobs" />
+            <item
+                android:id="@+id/nav_jobs_applied"
+                android:title="Jobs Applied" />
+            <item
+                android:id="@+id/nav_applications"
+                android:title="Applications" />
+        </menu>
+    </item>
+
+</menu>

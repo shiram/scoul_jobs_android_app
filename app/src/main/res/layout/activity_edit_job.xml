@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/background"
+    tools:context=".EditJob">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/job_add_header"
+                android:gravity="center"
+                android:textColor="@color/icons"
+                android:textSize="16sp"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/organisation_name"
+                android:textColorHint="@color/icons"
+                android:textColor="@color/icons"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/textinput"
+                android:inputType="text"
+                android:hint="@string/organisation_name"/>
+
+            <EditText
+                android:id="@+id/job_title"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/textinput"
+                android:hint="@string/job_title"
+                android:inputType="text"
+                android:textColor="@color/icons"
+                android:textColorHint="@color/icons" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/job_category"
+                android:textColorHint="@color/icons"
+                android:textColor="@color/icons"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/textinput"
+                android:inputType="text"
+                android:hint="@string/job_category"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textinput"
+                android:inputType="textMultiLine"
+                android:overScrollMode="always"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:lines="3"
+                android:textColor="@color/icons"
+                android:textColorHint="@color/icons"
+                android:scrollHorizontally="false"
+                android:id="@+id/job_description"
+                android:layout_marginBottom="10dp"
+                android:hint="@string/job_description"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textinput"
+                android:inputType="textMultiLine"
+                android:overScrollMode="always"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:textColor="@color/icons"
+                android:textColorHint="@color/icons"
+                android:lines="3"
+                android:scrollHorizontally="false"
+                android:id="@+id/job_qualification"
+                android:layout_marginBottom="10dp"
+                android:hint="@string/job_qualification"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textinput"
+                android:inputType="textMultiLine"
+                android:overScrollMode="always"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:lines="3"
+                android:textColor="@color/icons"
+                android:textColorHint="@color/icons"
+                android:scrollHorizontally="false"
+                android:id="@+id/job_requirements"
+                android:layout_marginBottom="10dp"
+                android:hint="@string/job_requirements"/>
+
+
+            <android.support.v7.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/menuText"
+                android:background="@drawable/buttons"
+                android:id="@+id/edit_job"
+                android:text="@string/job_edit"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+</ScrollView>

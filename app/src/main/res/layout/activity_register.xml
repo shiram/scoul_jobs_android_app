@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fillViewport="true"
+    tools:context=".Register">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linear_layout"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColorHint="@color/icons"
+                android:textColor="@color/icons"
+                android:id="@+id/firstname"
+                android:background="@drawable/textinput"
+                android:layout_marginTop="10dp"
+                android:inputType="text"
+                android:hint="@string/firstname"/>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColorHint="@color/icons"
+                android:textColor="@color/icons"
+                android:background="@drawable/textinput"
+                android:layout_marginTop="10dp"
+                android:id="@+id/lastname"
+                android:inputType="text"
+                android:hint="@string/lastname"/>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColorHint="@color/icons"
+                android:textColor="@color/icons"
+                android:id="@+id/date_of_birth"
+                android:background="@drawable/textinput"
+                android:layout_marginTop="10dp"
+                android:inputType="date"
+                android:hint="@string/date_of_birth"/>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColorHint="@color/icons"
+                android:textColor="@color/icons"
+                android:id="@+id/nationality"
+                android:background="@drawable/textinput"
+                android:layout_marginTop="10dp"
+                android:inputType="text"
+                android:hint="@string/nationality"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColorHint="@color/icons"
+                android:textColor="@color/icons"
+                android:id="@+id/email"
+                android:background="@drawable/textinput"
+                android:layout_marginTop="10dp"
+                android:inputType="textEmailAddress"
+                android:hint="@string/email"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColorHint="@color/icons"
+                android:textColor="@color/icons"
+                android:id="@+id/phone"
+                android:background="@drawable/textinput"
+                android:layout_marginTop="10dp"
+                android:inputType="phone"
+                android:hint="@string/phone"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/education"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/icons"
+            android:textSize="16sp"
+            android:layout_marginBottom="10dp"/>
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/education_level">
+
+        </android.support.v7.widget.AppCompatSpinner>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColorHint="@color/icons"
+                android:textColor="@color/icons"
+                android:id="@+id/postal_address"
+                android:background="@drawable/textinput"
+                android:layout_marginTop="10dp"
+                android:inputType="text"
+                android:hint="@string/postal_address"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColorHint="@color/icons"
+                android:textColor="@color/icons"
+                android:background="@drawable/textinput"
+                android:layout_marginTop="10dp"
+                android:id="@+id/password"
+                android:inputType="textPassword"
+                android:hint="@string/auth_password"/>
+    </LinearLayout>
+
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/linear_layout"
+        android:stretchColumns="*"
+        android:orientation="horizontal">
+        <TableRow>
+
+
+            <android.support.v7.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/menuText"
+                android:background="@drawable/buttons"
+                android:id="@+id/auth_register"
+                android:text="@string/auth_register"/>
+
+            <android.support.v7.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/auth_login"
+                android:textColor="@color/menuText"
+                android:background="@drawable/button_option_two"
+                android:text="@string/auth_login"/>
+
+
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>
+</ScrollView>
